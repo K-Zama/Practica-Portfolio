@@ -6,4 +6,93 @@
 body {
     background: #181818;
     color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.header {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .nav-bar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-bar>a {
+    margin: 0 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .logo>img {
+    padding: 10px;
+}
+
+.home {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    grid-column: span 4;
+    height: 90.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me .foto>img {
+    border-radius: 7em;
+    margin: 30px 30px;
+}
+
+.about-me>h3 {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.about-me .progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    width: 70%;
+}
+
+.about-me .progress .skills {
+    padding: 0 20px;
+    margin: 0 20px;
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 15px -2px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 15px -2px rgba(255, 255, 255, 1);
+}
+
+.progress .skills>i {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.progress .skills>h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.progress .skills>p {
+    margin-bottom: 30px;
 }
