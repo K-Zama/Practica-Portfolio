@@ -12,24 +12,35 @@
 
 <body>
     <div class="container">
+
+        <!-- HEADER -->
+
         <header class="header">
             <div class="logo">
                 <img src="img/Nombre.png" alt="Nombre">
             </div>
             <nav class="nav-bar">
-                <a href="">Home</a>
+                <a href="#Home">Home</a>
                 <a href="#about-me">About me</a>
-                <a href="">Diseños</a>
-                <a href="">Contacto</a>
+                <a href="#design">Diseños</a>
+                <a href="#contact">Contacto</a>
             </nav>
         </header>
-        <section class="home">
+
+        <!-- HOME -->
+
+        <section class="home" id="Home">
             <img src="img/Logo.png" alt="Logo">
         </section>
+
+        <!-- ABOUT ME -->
+
         <section class="about-me" id="about-me">
+
             <h3>About <span>me</span></h3>
             <div class="foto">
                 <img src="img/retrait.jpg" alt="Retrato">
+                <img src="img/Nombre.png" alt="Nombre">
             </div>
             <section class="progress">
                 <div class="skills">
@@ -40,23 +51,110 @@
                 <div class="skills">
                     <i class="fas fa-code"></i>
                     <h3>Desarrollador Web</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque illum explicabo magni fugit laudantium numquam deserunt beatae ab temporibus, aperiam nesciunt ipsa. Numquam voluptates deleniti sint id eos ullam aliquam?</p>
-
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit temporibus, aperiam nesciunt ipsa. Numquam voluptates deleniti sint id eos ullam aliquam?</p>
                 </div>
                 <div class="skills">
                     <i class="fas fa-poll"></i>
                     <h3>Experto en marketing</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque illum explicabo magni fugit laudantium numquam deserunt beatae ab temporibus, aperiam nesciunt ipsa. Numquam voluptates deleniti sint id eos ullam aliquam?</p>
+                </div>
+            </section>
 
+            <h3>Works</h3>
+            <section class="works">
+                <div class="work-card">
+                    <img src="img/weplan-logo.png" alt="Weplan">
+                    <h4>Marketing department Manager</h4>
+                    <p>2019-2020</p>
+                </div>
+                <div class="work-card">
+                    <img src="img/Valeo-logo.png" alt="Valeo">
+                    <h4>Manager Product Assistant</h4>
+                    <p>2018-2019</p>
+                </div>
+                <div class="work-card">
+                    <img src="img/HolaPeople-logo.png" alt="HolaPeople">
+                    <h4>Community Manager</h4>
+                    <p>2017-2018</p>
                 </div>
             </section>
         </section>
-        <section class="portfolio-design">
+
+        <!-- DESIGNS -->
+
+        <section class="portfolio-design" id="design">
             <h3>Diseños</h3>
-            <section class="row1">
-                <img src="img/DessArt1.png" alt="">
-            </section>
+            <div class="imagenes-logos">
+                <h2>Logos</h2>
+                <div class="logos-row">
+                    <img src="img/mercadona-te-cuida.png" alt="Mercadona">
+                    <img src="img/DessArt-logo.png" alt="DessArt">
+                </div>
+                <div class="logos-column">
+                    <img src="img/Futmondo-logo.png" alt="Futmondo">
+                    <img src="img/Regalosmoteros-logo.png" alt="Regalosmoteros">
+                </div>
+            </div>
+
+            <div class="imagenes-maquetacion">
+                <h2>Maquetación</h2>
+                <div class="maquetacion-row">
+                    <img src="img/escobillas-Valeo.png" alt="Escobillas Valeo">
+                    <img src="img/silencio-valeo.png" alt="Silencio Valeo">
+                </div>
+                <div class="maquetacion-column">
+                    <img src="img/MotorArranque-Valeo.png" alt="MotorArranque Valeo">
+                </div>
+            </div>
+
+            <div class="photography">
+                <h2>Retoque fotográfico</h2>
+                <div class="photos-row">
+                    <img src="img/HuevoCharro.png" alt="Huevo Charro">
+                    <img src="img/HuevoLineas.png" alt="Huevo Lineas">
+                    <img src="img/AvocadoLuz.png" alt="Avocado">
+                </div>
+                <div class="photos-column">
+                    <img src="img/ambiguedad.png" alt="Tarta circular">
+                </div>
+            </div>
         </section>
+
+        <!-- CONTACT -->
+
+        <section class="contact-form" id="contact">
+            <h3>Contact</h3>
+            <form action="#">
+                <p>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="fullname">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label for="phone">Móvil</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p class="block">
+                    <label>Mensaje</label>
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button type="submits">Send</button>
+                </p>
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+            <p>Alejandro Zamarreño</p>
+            <p>648 688 865</p>
+            <p>zamarreño.plaza@gmail.com</p>
+        </footer>
+
         <!-- ICONOS-->
         <script src="https://kit.fontawesome.com/90977727b3.js" crossorigin="anonymous"></script>
     </div>

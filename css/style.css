@@ -36,6 +36,11 @@ body {
     color: #fff;
 }
 
+.header .nav-bar>a:hover {
+    text-decoration: underline;
+    transition: background-color 1s ease-out;
+}
+
 .header .logo>img {
     padding: 10px;
 }
@@ -63,9 +68,23 @@ body {
     flex-direction: column;
 }
 
+.about-me .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-me .foto>img {
     border-radius: 7em;
-    margin: 30px 30px;
+    margin: 30px 0px;
+    width: 50%;
+}
+
+.about-me .foto>img[alt="Nombre"] {
+    width: 70%;
+    height: 70%;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .about-me>h3,
@@ -91,8 +110,10 @@ body {
 }
 
 .about-me .progress .skills {
+    background: #222222;
     padding: 0 20px;
     margin: 0 20px;
+    border-radius: 1em;
     -webkit-box-shadow: 0px 0px 15px -2px rgba(255, 255, 255, 1);
     -moz-box-shadow: 0px 0px 15px -2px rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 15px -2px rgba(255, 255, 255, 1);
@@ -112,6 +133,42 @@ body {
     margin-bottom: 30px;
 }
 
+.about-me .works {
+    width: 80%;
+    justify-content: space-around;
+    align-items: flex-end;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.about-me .works .work-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+
+.about-me .works .work-card>h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.about-me .works .work-card>p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.about-me .works .work-card>img[alt="Valeo"] {
+    width: 200px;
+    height: 87px;
+}
+
+.about-me .works .work-card>img[alt="HolaPeople"] {
+    width: 112px;
+    height: 112px;
+}
+
 
 /* -- PORTFOLIO -- */
 
@@ -119,14 +176,174 @@ body {
     grid-column: 1 / -1;
 }
 
-.portfolio-design .row1 {
+.portfolio-design .imagenes-logos>h2 {
+    text-align: center;
+    margin: 20px 50px;
+    border: 1px solid #fff;
+    font-size: 2em;
+    padding: 0.5em 0px;
+}
+
+.portfolio-design .imagenes-logos .logos-row {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-design .imagenes-logos .logos-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-design .imagenes-logos .logos-row>img {
+    margin: 30px 70px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.portfolio-design .imagenes-logos .logos-column>img {
+    width: fit-content;
+    margin: 30px 0px;
+}
+
+
+/* -- MAQUETACIÓN -- */
+
+.portfolio-design .imagenes-maquetacion {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.portfolio-design .imagenes-maquetacion>h2 {
+    margin-bottom: 100px;
+    border: 1px solid #fff;
+    font-size: 2em;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0.5em 0px;
+}
+
+.portfolio-design .imagenes-maquetacion .maquetacion-row {
     display: flex;
     justify-content: space-around;
 }
 
-.portfolio-design .row1>img {
-    width: 10%;
-    height: 10%;
+.portfolio-design .imagenes-maquetacion .maquetacion-column>img {
+    margin: 150px 0px;
+}
+
+
+/* Retoque fotográfico */
+
+.portfolio-design .photography>h2 {
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 0px 50px;
+    font-size: 2em;
+    padding: 0.5em 0px;
+}
+
+.portfolio-design .photography .photos-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.portfolio-design .photography .photos-row>img {
+    margin: 50px 0px;
+}
+
+.portfolio-design .photography .photos-column {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    object-fit: cover;
+}
+
+
+/* Contacto */
+
+.contact-form {
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+
+.contact-form>h3 {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.contact-form form {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    margin: 2em 1em;
+}
+
+.contact-form form .block {
+    grid-column: span 4;
+}
+
+.contact-form form input,
+.contact-form form button,
+.contact-form form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    /* outline, es la linea de fuera de un input que aparece cuando clickas con el ratón */
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #D63031;
+}
+
+.contact-form form button {
+    background: #b70e21;
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+    color: #fff;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #D63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+/* Footer */
+
+.container .footer {
+    grid-column: span 4;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    background: #222222;
+    -webkit-box-shadow: -3px 2px 51px -12px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -3px 2px 51px -12px rgba(255, 255, 255, 1);
+    box-shadow: -3px 2px 51px -12px rgba(255, 255, 255, 1);
+}
+
+.container .footer>p {
+    font-size: 1em;
+    font-weight: 100;
 }
 
 
@@ -140,6 +357,33 @@ body {
     .about-me .progress .skills {
         margin: 20px 20px;
     }
+    .portfolio-design .imagenes-maquetacion .maquetacion-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-design .imagenes-maquetacion .maquetacion-row>img {
+        margin: 50px 20px;
+    }
+    .portfolio-design .imagenes-maquetacion .maquetacion-column>img {
+        width: 70%;
+        height: 70%;
+        margin: 100px 0px;
+    }
+    .portfolio-design .photos-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-design .photos-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-design .photos-column>img {
+        width: 70%;
+        height: 70%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -150,22 +394,37 @@ body {
     .container .header {
         grid-column: 1;
     }
-    .header .nav-bar>a {
-        margin: 0 0.5em;
-        font-size: 0.5em;
-        text-decoration: none;
-        color: #fff;
-    }
-    .header .nav-bar>a {
-        margin: 0 0.5em;
-        font-size: 1.5em;
-        text-decoration: none;
-    }
     .about-me .progress {
         display: flex;
         justify-content: center;
     }
     .about-me .progress .skills {
         margin: 20px 20px;
+    }
+    .about-me .works {
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px;
+    }
+    .about-me .works .work-card {
+        margin: 20px 0px;
+    }
+    .contact-form {
+        margin: 0px 50px;
+    }
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-form form p>label {
+        font-size: 2em;
+    }
+    .contact-form form p>input,
+    .contact-form form p>textarea {
+        font-size: 2em;
     }
 }
