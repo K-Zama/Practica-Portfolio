@@ -30,8 +30,8 @@ body {
 }
 
 .header .nav-bar>a {
-    margin: 0 1em;
-    font-size: 1.5em;
+    padding: 0px 15px;
+    font-size: 20px;
     text-decoration: none;
     color: #fff;
 }
@@ -43,6 +43,7 @@ body {
 
 .header .logo>img {
     padding: 10px;
+    margin-left: 20px;
 }
 
 
@@ -87,13 +88,13 @@ body {
     margin-bottom: 50px;
 }
 
-.about-me>h3,
-.portfolio-design>h3 {
+.about-me>h3 {
     text-align: center;
     margin-top: 10px;
     padding: 20px;
     font-size: 3em;
     font-weight: 200;
+    width: 95.5%;
 }
 
 .about-me h3>span {
@@ -131,6 +132,7 @@ body {
 
 .progress .skills>p {
     margin-bottom: 30px;
+    background: #222222;
 }
 
 .about-me .works {
@@ -138,7 +140,9 @@ body {
     justify-content: space-around;
     align-items: flex-end;
     display: flex;
-    margin: 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right: 112px;
 }
 
 .about-me .works .work-card {
@@ -174,6 +178,16 @@ body {
 
 .portfolio-design {
     grid-column: 1 / -1;
+}
+
+.portfolio-design>h3 {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 3em;
+    font-weight: 200;
 }
 
 .portfolio-design .imagenes-logos>h2 {
@@ -237,10 +251,10 @@ body {
 
 .portfolio-design .photography>h2 {
     text-align: center;
-    border: 1px solid #fff;
     margin: 0px 50px;
     font-size: 2em;
     padding: 0.5em 0px;
+    border: 1px solid #fff;
 }
 
 .portfolio-design .photography .photos-row {
@@ -261,7 +275,7 @@ body {
 }
 
 
-/* Contacto */
+/* -- CONTACTO -- */
 
 .contact-form {
     grid-column: span 4;
@@ -273,8 +287,8 @@ body {
 
 .contact-form>h3 {
     text-align: center;
-    margin-top: 10px;
-    padding: 20px;
+    margin: 50px 0px;
+    margin-top: 0px;
     font-size: 3em;
     font-weight: 200;
 }
@@ -310,6 +324,15 @@ body {
     border-bottom: 1px solid #D63031;
 }
 
+.contact-form form textarea {
+    max-width: 835px;
+    min-width: 600px;
+    min-height: 50px;
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form form button {
     background: #b70e21;
     border: none;
@@ -327,11 +350,11 @@ body {
 }
 
 
-/* Footer */
+/* -- FOOTER -- */
 
 .container .footer {
     grid-column: span 4;
-    margin: 10px 0px;
+    margin-top: 10px;
     padding: 20px 0px;
     display: flex;
     justify-content: space-around;
@@ -347,7 +370,7 @@ body {
 }
 
 
-/* Media querys */
+/* -- MEDIA QUERYS -- */
 
 @media screen and (max-width: 1200px) {
     .about-me .progress {
@@ -410,10 +433,12 @@ body {
         margin: 30px 0px;
     }
     .about-me .works .work-card {
-        margin: 20px 0px;
+        margin: 60px 100px;
+        padding: 0px 100px;
     }
     .contact-form {
         margin: 0px 50px;
+        padding-right: 100px;
     }
     .contact-form form {
         display: flex;
