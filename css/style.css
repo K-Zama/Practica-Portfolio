@@ -247,7 +247,7 @@ body {
 }
 
 
-/* Retoque fotográfico */
+/* -- RETOQUE FOTOGRÁFICO -- */
 
 .portfolio-design .photography>h2 {
     text-align: center;
@@ -445,9 +445,7 @@ body {
         flex-direction: column;
         width: 100%;
     }
-    .contact-form form p>label {
-        font-size: 2em;
-    }
+    .contact-form form p>label,
     .contact-form form p>input,
     .contact-form form p>textarea {
         font-size: 2em;
